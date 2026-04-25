@@ -7,6 +7,7 @@ return {
             -- default: 1 tmux window, 2 panes
             vim.g.slime_default_config = { socket_name = "default", target_pane = "{last}" }
             vim.g.slime_cell_delimiter = "# %%"
+            vim.g.slime_bracketed_paste = 1
         end,
         config = function()
             vim.keymap.set("n", "<leader>sc", "<Plug>SlimeConfig<CR>", { remap = true, silent = false, desc = "slime config" })

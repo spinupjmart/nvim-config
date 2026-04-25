@@ -24,6 +24,7 @@ return {
                 'markdown_inline',
                 'python',
                 'rust',
+                'sql',
                 'tmux',
                 'vim',
                 'vimdoc',
