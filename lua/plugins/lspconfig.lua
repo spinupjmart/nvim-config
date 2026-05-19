@@ -1,13 +1,13 @@
 return {
     -- mason -> mason-lspconfig -> lspconfig
     {
-        "williamboman/mason.nvim",
+        'williamboman/mason.nvim',
         config = function()
             require('mason').setup()
         end
     },
     {
-        "williamboman/mason-lspconfig.nvim",
+        'williamboman/mason-lspconfig.nvim',
         config = function()
             require('mason-lspconfig').setup({
                 ensure_installed = {
@@ -22,7 +22,7 @@ return {
         end
     },
     {
-        "neovim/nvim-lspconfig",
+        'neovim/nvim-lspconfig',
         config = function()
             -- Configure the LSPs
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -36,7 +36,7 @@ return {
                 },
                 capabilities = capabilities,
                 --filetypes = {'fortran', '*.f', '*.f90'},
-                --root_dir = require('lspconfig').util.root_pattern("*.f90"),
+                --root_dir = require('lspconfig').util.root_pattern('*.f90'),
                 --root_pattern = {'*.f', '*.f90'},
             })
             vim.lsp.config('julials', {
@@ -54,7 +54,7 @@ return {
                             library = {
                                 -- Include Neovim runtime files
                                 vim.env.VIMRUNTIME,
-                                --vim.api.nvim_get_runtime_file("", true),
+                                --vim.api.nvim_get_runtime_file('', true),
                             },
                         },
                         telemetry = {

@@ -1,8 +1,8 @@
 -- setup general vim options and keymaps
 
 -- Define the leaders
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.mapleader = ' '
+vim.g.maplocalleader = '\\'
 
 -- Turn on line numbers by default
 vim.opt.number = true

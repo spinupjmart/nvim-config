@@ -49,13 +49,13 @@ return {
                             end
                         end
                         return require('lspkind').cmp_format({
-                            mode = "symbol",
+                            mode = 'symbol',
                             menu = ({
-                                buffer = "[Buffer]",
-                                nvim_lsp = "[LSP]",
-                                luasnip = "[LuaSnip]",
-                                nvim_lua = "[Lua]",
-                                latex_symbols = "[Latex]",
+                                buffer = '[Buffer]',
+                                nvim_lsp = '[LSP]',
+                                luasnip = '[LuaSnip]',
+                                nvim_lua = '[Lua]',
+                                latex_symbols = '[Latex]',
                             }),
                         })(entry, vim_item)
                     end
