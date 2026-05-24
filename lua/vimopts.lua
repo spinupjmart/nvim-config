@@ -4,6 +4,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 
+-- Set default window border to rounded
+vim.o.winborder = 'rounded'
+
 -- Turn on line numbers by default
 vim.opt.number = true
 

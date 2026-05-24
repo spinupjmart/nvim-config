@@ -81,13 +81,6 @@ return {
                 'pyright',
                 'zls'
             })
-            -- add border to diagnostic messages
-            -- vim.diagnostic.config({
-            --     virtual_text = true,
-            --     float = {
-            --         border = 'rounded',
-            --     }
-            -- })
             -- Setup LSP keymaps
             vim.api.nvim_create_autocmd('LspAttach', {
                 group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
@@ -100,8 +93,7 @@ return {
                     -- remap diagnostic float
                     map('gK', vim.diagnostic.open_float, 'Open diagnostic message')
 
-                    -- add border to hover
-                    -- map('K', function() vim.lsp.buf.hover {border = 'rounded'} end, 'Hover')
+                    -- hover
                     map('K', vim.lsp.buf.hover, 'Hover')
 
                     -- remap diagnostic jump
