@@ -18,6 +18,7 @@ return {
     {
         'hrsh7th/nvim-cmp',
         config = function()
+            vim.o.winborder = 'rounded'
             local cmp = require('cmp')
             cmp.setup({
                 window = {
