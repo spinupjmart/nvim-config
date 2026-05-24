@@ -17,7 +17,6 @@ return {
         },
         gui_style = {
             fg = 'BOLD',
-            bg = 'BOLD',
         },
     },
     vim.keymap.set('n', '<leader>tn', function()
