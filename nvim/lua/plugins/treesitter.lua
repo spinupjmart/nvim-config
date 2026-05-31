@@ -1,0 +1,33 @@
+return {
+    'nvim-treesitter/nvim-treesitter',
+    lazy = false,
+    build = ':TSUpdate',
+    branch = 'main',
+    opts = {
+        highlight = { enable = true },
+        require('nvim-treesitter').install {
+            'bash',
+            'bibtex',
+            'c',
+            'diff',
+            'fortran',
+            'html',
+            'julia',
+            'latex',
+            'lua',
+            'luadoc',
+            'make',
+            'markdown',
+            'markdown_inline',
+            'python',
+            'rust',
+            'sql',
+            'tmux',
+            'vim',
+            'vimdoc',
+            'xml',
+            'yaml',
+            'zig'
+        },
+    },
+}
